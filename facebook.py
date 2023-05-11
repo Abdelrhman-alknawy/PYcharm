@@ -1,0 +1,4 @@
+import requests
+
+response = requests.post("https://graph.facebook.com/104551542641085/feed?message=This automated post by python (iti ) !&access_token=EAAIoweMjrbEBALYB8CZCdlOS0fBqIdqjDkFr98zxOytKYC12Vqz9ojZBxwQnZCsowqG9tUiEUi9Lsp409PNVh9fyNKhVj2ARIhSRg1b5NIEvWwgkOlnANDfar9pZBl53akMlOzZC91EWAj6dwxyOa7QbdyrbBSUfAG6zbZBIKdgJUSSy7GASVVMycQPOc3lAL1ZBOCWxucZBtrdefPjYX3PN")
+print(response.json())

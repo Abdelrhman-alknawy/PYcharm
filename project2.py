@@ -1,0 +1,3 @@
+import requests
+response=requests.post("https://graph.facebook.com/111134551977631/feed?message=Hello Fans!&access_token=EAANW9ZCeRLo0BAAfvT63vVZB8j5fyAkZALuuhSsPBDcNAqD7RFp16ctsMMKvTS6GVkSnFM2wddLx3sK8grin9CTJyewE46kfgpKw2qO0FFfgQuHxGwqCf26gQBaowOGmK8G8s1tDGOrNSpahV10uhpu9shVbcoettFZB6ZC1WGZBNmiaND4xOpdZCdpoBotwUFnlTldLdWatTAuvmuFPGhW2zS9t7i24acZD")
+print(response.json())
