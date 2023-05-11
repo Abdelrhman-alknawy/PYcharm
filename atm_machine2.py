@@ -4,7 +4,7 @@
 account_info = {
     'Knawy': {'balance': 5000, 'pin': '1234'},
     'Salem': {'balance': 3500, 'pin': '5678'},
-    'Gwaily': {'balance': 2000, 'pin': '9012'},
+   'Gwaily': {'balance': 2000, 'pin': '9012'},
     'Islam' :{'balance': 4000 , 'pin':'4444'}
 }
 
@@ -21,14 +21,14 @@ while True:
         continue
 
     print("Login successful.")
-
-    while True:
+    choice =0
+    while choice!=4  :
         print("\nATM Menu:")
         print("1. Check balance")
         print("2. Withdraw")
         print("3. Deposit")
         print("4. Logout")
-
+        print("5. Logout")
         choice = int(input("Enter your choice (1-4): "))
 
         if choice == 1:
@@ -49,8 +49,10 @@ while True:
 
         elif choice == 4:
             print("Logout successful.")
-            break
 
+        elif choice == 5 :
+            print("Exit ATM")
+            break
         else:
             print("Invalid choice. Please try again.")
-    break
+            continue
